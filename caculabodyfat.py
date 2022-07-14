@@ -20,7 +20,7 @@ def homem():
         print("Digite um número...")
         homem()
     BF = 495 / (1.0324 - 0.19077 * math.log10(cintura - pescoco) + 0.15456 * math.log10(altura)) - 450
-    print(BF,'%')
+    print(f'{BF:,.2f}%')
     calculaBF()
 
 def mulher():
@@ -33,7 +33,8 @@ def mulher():
         print("Digite um número...")
         mulher()
     BF = 495 / (1.29579 - 0.35004 * math.log10(cintura + quadril - pescoco) + 0.22100 * math.log10(altura)) - 450
-    print(BF,'%')
+
+    print(f'{BF:,.2f}%')
     calculaBF()
 
 calculaBF()
